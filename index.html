@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="interface.css">
+    <title>Survive</title>
+  </head>
+
+  <body onload="createTable()">
+    <center>
+      <table id="everything"></table>
+    </center>
+    <div id="inventory">
+      <div id="slot1"></div>
+      <div id="slot2"></div>
+      <div id="slot3"></div>
+      <div id="slot4"></div>
+    </div>
+    <div id="crafting_menu">
+      <div id="scroll_area">
+        <div id="item1" onmouseover="info(['650 Wood Pieces'])" onclick="purchase('wooden_pickaxe')"></div>
+        <div id="item2" onmouseover="info(['650 Wood Pieces'])" onclick="purchase('wooden_axe')"></div>
+        <div id="item3" onmouseover="info(['500 Wood Pieces'])" onclick="purchase('wooden_sword')"></div>
+        <div id="item4" onmouseover="info(['350 Wood Pieces'])" onclick="purchase('wooden_spear')"></div>
+        <div id="item5" onmouseover="info(['300 Wood Pieces'])" onclick="purchase('wooden_hammer')"></div>
+        <div id="item6" onmouseover="info(['1600 Wood Pieces'])" onclick="purchase('wooden_box')"></div>
+        <div id="item7" onmouseover="info(['600 Wood Pieces', '100 Wood Pieces', 'Wood Tier Pickaxe'])" onclick="purchase('stone_pickaxe')"></div>
+        <div id="item8" onmouseover="info(['600 Wood Pieces', '100 Wood Pieces', 'Wood Tier Axe'])" onclick="purchase('stone_axe')"></div>
+        <div id="item9" onmouseover="info(['400 Wood Pieces', '100 Wood Pieces', 'Wood Tier Sword'])" onclick="purchase('stone_sword')"></div>
+        <div id="item10" onmouseover="info(['200 Wood Pieces', '150 Wood Pieces', 'Wood Tier Spear'])" onclick="purchase('stone_spear')"></div>
+        <div id="item11" onmouseover="info(['200 Wood Pieces', '100 Wood Pieces', 'Wood Tier Hammer'])" onclick="purchase('stone_hammer')"></div>
+        <div id="item12" onmouseover="info('item12')" onclick="purchase('')"></div>
+        <div id="item13" onmouseover="info('item13')" onclick="purchase('')"></div>
+        <div id="item14" onmouseover="info('item14')" onclick="purchase('')"></div>
+        <div id="item15" onmouseover="info('item15')" onclick="purchase('')"></div>
+        <div id="item16" onmouseover="info('item16')" onclick="purchase('')"></div>
+        <div id="item17" onmouseover="info('item17')" onclick="purchase('')"></div>
+        <div id="item18" onmouseover="info('item18')" onclick="purchase('')"></div>
+        <div id="item19" onmouseover="info('item19')" onclick="purchase('')"></div>
+        <div id="item20" onmouseover="info('item20')" onclick="purchase('')"></div>
+        <div id="item21" onmouseover="info('item21')" onclick="purchase('')"></div>
+        <div id="item22" onmouseover="info('item22')" onclick="purchase('')"></div>
+        <div id="item23" onmouseover="info('item23')" onclick="purchase('')"></div>
+        <div id="item24" onmouseover="info('item24')" onclick="purchase('')"></div>
+      </div>
+      <div id="info_box"><center>This is where you'll see info on the items you hover over</center></div>
+    </div>
+    <button id="crafting_menu_access" onclick="crafting_menu_access()">+</button>
+    <div id="building_menu">
+      <div id="block1" onclick="building_purchase('wooden_wall')">800</div>
+      <div id="block2" onclick="building_purchase('wooden_door')">1200</div>
+      <div id="block3" onclick="building_purchase('wooden_trap')" style="color:white;">1000</div>
+      <div id="block4" onclick="building_purchase('stone_wall')">800</div>
+      <div id="block5" onclick="building_purchase('stone_door')">1200</div>
+      <div id="block6" onclick="building_purchase('stone_trap')" style="color:white;">1000</div>
+      <div id="block7" onclick="building_purchase('iron_wall')">800</div>
+      <div id="block8" onclick="building_purchase('iron_door')">1200</div>
+      <div id="block9" onclick="building_purchase('iron_trap')" style="color:white;">1000</div>
+      <div id="block10" onclick="building_purchase('gold_wall')">800</div>
+      <div id="block11" onclick="building_purchase('gold_door')">1200</div>
+      <div id="block12" onclick="building_purchase('gold_trap')" style="color:white;">1000</div>
+    </div>
+    <button id="building_menu_access" onclick="building_menu_access()">+</button>
+
+    <script src="locations.js"></script>
+    <script src="main.js"></script>
+    <script src="load.js"></script>
+    <script src="cows.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+body {
+  user-select:none;
+}
+
+td {
+  border:1px solid black;
+  width:100px;
+  height:100px;
+  text-align:center;
+  background-color:lightgreen;
+}
+
+table {
+  border-spacing:0px;
+  z-index:1;
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:scroll;
+  table-layout:fixed;
+}
+
+.night_grass {
+  background-color:#4c7d4c;
+}
+
+.rock {
+  background-color:#808080;
+}
+
+.player {
+  background-color:#654321;
+}
+
+.tree {
+  background-color:darkgreen;
+}
+
+.bush {
+  background-image:url("Images/bush.jpg");
+}
+
+.cow0, .cow1, .cow2 {
+  background-color:white;
+}
+
+#inventory {
+  left:712px;
+  top:700px;
+  width:auto;
+  height:auto;
+  position:fixed;
+  z-index:2;
+}
+
+#slot1, #slot2, #slot3, #slot4 {
+  width:50px;
+  height:50px;
+  margin:10px;
+  display:inline-block;
+  background-color:white;
+  border:2px solid black;
+  vertical-align:top;
+}
+
+#slot3, #slot4 {
+  display:none;
+}
+
+#crafting_menu {
+  background-color:lightblue;
+  border:2px solid black;
+  padding-left:30px;
+  left:1007px;
+  width:527px;
+  height:370px;
+  position:fixed;
+  z-index:3;
+  visibility:hidden;
+}
+
+#item1, #item2, #item3, #item4, #item5, #item6, #item7, #item8, #item9, #item10, #item11, #item12, #item13, #item14, #item15, #item16, #item17, #item18,
+#item19, #item20, #item21, #item22, #item23, #item24, #info_box {
+  width:50px;
+  height:50px;
+  margin:10px;
+  display:inline-block;
+  background-color:white;
+  border:2px solid black;
+}
+
+#info_box {
+  width:442px;
+  height:100px;
+}
+
+#scroll_area {
+  width:490px;
+  height:240px;
+  overflow-y:scroll;
+}
+
+#scroll_area::-webkit-scrollbar, body::-webkit-scrollbar {
+  width:10px;
+  background-color:white;
+  border-radius:8px;
+}
+
+#scroll_area::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color:gray;
+  border-radius:8px;
+}
+
+#scroll_area::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color:white;
+    border-radius:8px;
+}
+
+#item1 {
+  background-image:url("Images/wooden_pickaxe.jpg");
+}
+
+#item2 {
+  background-image:url("Images/wooden_axe.jpg");
+}
+
+#item3 {
+  background-image:url("Images/wooden_sword.jpg");
+}
+
+#item4 {
+  background-image:url("Images/wooden_spear.jpg");
+}
+
+#item5 {
+  background-image:url("Images/wooden_shovel.jpg");
+}
+
+#item6 {
+  background-image:url("Images/wooden_box.jpg");
+}
+
+#item7 {
+  background-image:url("Images/stone_pickaxe.jpg");
+}
+
+#item8 {
+  background-image:url("Images/stone_axe.jpg");
+}
+
+#item9 {
+  background-image:url("Images/stone_sword.jpg");
+}
+
+#item10 {
+  background-image:url("Images/stone_spear.jpg");
+}
+
+#item11 {
+  background-image:url("Images/stone_shovel.jpg");
+}
+
+#crafting_menu_access {
+  width:25px;
+  height:25px;
+  left:1544px;
+  background-color:lightblue;
+  border:2px solid black;
+  position:fixed;
+  z-index:4;
+}
+
+#building_menu {
+  background-color:#b19cd9;
+  border:2px solid black;
+  padding-left:30px;
+  left:1285px;
+  top:362px;
+  width:250px;
+  height:371px;
+  position:fixed;
+  z-index:3;
+  visibility:hidden;
+}
+
+#block1, #block2, #block3, #block4, #block5, #block6, #block7, #block8, #block9, #block10, #block11, #block12 {
+  width:50px;
+  height:50px;
+  margin:9px;
+  display:inline-block;
+  background-color:white;
+  border:2px solid black;
+}
+
+#block1, #block2, #block3 {
+  margin-top:45px;
+  background-color:#998765;
+}
+
+#block2 {
+  background-image:url("Images/wooden_door.jpg");
+}
+
+#block3 {
+  background-image:url("Images/wooden_trap.jpg");
+}
+
+#block4 {
+  background-color:gray;
+}
+
+#block5 {
+  background-image:url("Images/stone_door.jpg");
+}
+
+#block6 {
+  background-image:url("Images/stone_trap.jpg");
+}
+
+#block7 {
+  background-color:#bbc6c9;
+}
+
+#block8 {
+  background-image:url("Images/iron_door.jpg");
+}
+
+#block9 {
+  background-image:url("Images/iron_trap.jpg");
+}
+
+#block10 {
+  background-color:#cfb53b;
+}
+
+#block11 {
+  background-image:url("Images/gold_door.jpg");
+}
+
+#block12 {
+  background-image:url("Images/gold_trap.jpg");
+}
+
+#building_menu_access {
+  width:25px;
+  height:25px;
+  top:712px;
+  left:1544px;
+  background-color:#b19cd9;
+  border:2px solid black;
+  position:fixed;
+  z-index:4;
+}
+
+.wooden_wall {
+  background-color:#998765;
+}
+
+.wooden_door {
+  background-image:url("Images/wooden_door_game.jpg");
+}
+
+.wooden_trap {
+  backgrpund-image:url("Images/wooden_trap.jpg");
+}

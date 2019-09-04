@@ -1,0 +1,5 @@
+For seeing the coordinates of every square (except the ones the cows go on):
+
+Paste in load.js at Line 13, Character 53
+
+" + "r-" + i + "-" + j + "
